@@ -1,0 +1,26 @@
+.Bar-chart {
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.overview-text {
+  padding: 20px;
+  font-weight: 500;
+}
+.EarningsText {
+  padding: 10px;
+  font-weight: 500;
+  color: grey;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 767px) {
+  .Bar-chart {
+    padding-top: 10%;
+  }
+
+  .Bar-chart .recharts-bar-rectangles {
+    width: 5px;
+  }
+}

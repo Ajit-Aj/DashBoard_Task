@@ -1,0 +1,26 @@
+
+.page2-container {
+  display: flex;
+ 
+  align-items: center;
+  justify-content: center;
+  height: 120vh; 
+
+}
+
+#lottie-container {
+  width: 500px; 
+  height: 600px; 
+}
+
+/* Media queries for mobile view */
+@media only screen and (max-width: 767px) {
+  .page2-container {
+    padding: 20px;
+    margin-top: 10%;  }
+
+  #lottie-container {
+    width: 80%; 
+    height: auto; 
+  }
+}

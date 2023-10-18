@@ -1,0 +1,44 @@
+.Pie_chart {
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.Text {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.customers {
+  padding: 20px;
+  font-weight: 500;
+}
+
+.customers-buy {
+  padding: 10px;
+  font-weight: 500;
+  color: grey;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 767px) {
+  .Pie_chart {
+    border-radius: 10px;
+    padding: 5px; 
+  }
+
+  .Text {
+    font-size: 10px; 
+    padding: 5px; 
+  }
+
+  .customers {
+    padding: 10px;
+  }
+
+  .customers-buy {
+    padding: 5px; 
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,25 @@
+.page3-container {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  height: 120vh;
+}
+
+#lottie-container {
+  width: 300px;
+  height: 300px;
+}
+
+/* Media queries for mobile view */
+@media only screen and (max-width: 767px) {
+  .page3-container {
+    padding: 20px;
+     margin-top: 15%;
+  }
+
+  #lottie-container {
+    width: 80%;
+    height: auto;
+  }
+}

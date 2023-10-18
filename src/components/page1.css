@@ -1,0 +1,65 @@
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.card {
+  width: 150px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  background:#fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  /* Transition for smoother hover effect */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card:hover {
+  background-color: #401c9b;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.container .card {
+  animation: slideIn 0.5s forwards;
+  opacity: 0;
+}
+
+/* Delay the animation for each card */
+.container .card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.container .card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 50%; 
+  }
+}
